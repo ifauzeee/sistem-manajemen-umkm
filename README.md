@@ -2,9 +2,6 @@
 
 Aplikasi web full-stack untuk manajemen produk dan sistem kasir sederhana (Point of Sale). Proyek ini berfungsi sebagai studi kasus untuk membangun aplikasi modern dari awal hingga akhir menggunakan stack React (dengan TypeScript) dan Node.js (dengan Express & MySQL).
 
-![Tangkapan Layar Aplikasi](https://i.imgur.com/L8aY3Xk.png)
-*Catatan: Ganti URL di atas dengan link screenshot aplikasi Anda sendiri.*
-
 ---
 
 ## ✨ Fitur Utama
