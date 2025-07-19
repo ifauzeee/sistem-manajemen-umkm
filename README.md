@@ -80,7 +80,7 @@ Frontend berjalan di `http://localhost:5173`
 ## 📂 Struktur Folder
 
 ```
-.
+sistem-manajemen-umkm
 ├── backend/
 │   ├── routes/
 │   ├── middleware/
