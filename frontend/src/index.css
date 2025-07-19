@@ -1,3 +1,10 @@
+/* frontend/src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-color: #000000; /* <-- UBAH KE HITAM PEKAT */
+    color: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+}

@@ -3,24 +3,24 @@ const express = require('express');
 const cors = require('cors');
 const db = require('./db');
 
-const produkRoutes = require('./routes/produk'); // <-- BARIS BARU
+const authRoutes = require('./routes/auth');
+const produkRoutes = require('./routes/produk');
+const transaksiRoutes = require('./routes/transaksi');
+const dashboardRoutes = require('./routes/dashboard');
+const kategoriRoutes = require('./routes/kategori'); 
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware
 app.use(cors());
 app.use(express.json());
 
-// Route pengetesan
-app.get('/', (req, res) => {
-    res.json({ message: "Backend API is working!" });
-});
+app.use('/api/auth', authRoutes);
+app.use('/api/produk', produkRoutes);
+app.use('/api/transaksi', transaksiRoutes);
+app.use('/api/dashboard', dashboardRoutes);
+app.use('/api/kategori', kategoriRoutes); // 
 
-// Gunakan Rute
-app.use('/api/produk', produkRoutes); // <-- BARIS BARU
-
-// Jalankan server
 app.listen(PORT, async () => {
     try {
         await db.getConnection();
